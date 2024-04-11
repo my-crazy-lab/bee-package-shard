@@ -1,0 +1,39 @@
+{
+  "name": "@btaskee-ops/utils",
+  "version": "1.0.0",
+  "description": "btaskee operation utils",
+  "keywords": [],
+  "author": "MinhLeeBtaskee <leminh.nguyen@btaskee.com>",
+  "license": "ISC",
+  "main": "dist/main.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/btaskee/btaskee-ops/package-shared.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/utils.test.js",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/btaskee/btaskee-ops/package-shared/issues"
+  },
+  "homepage": "https://gitlab.com/btaskee/btaskee-ops/package-shared#readme",
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.7",
+    "prettier": "^3.2.5",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
